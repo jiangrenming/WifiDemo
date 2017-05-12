@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/wifi_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WLAN设置"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black" />
+    <include
+        android:layout_below="@+id/wifi_setting"
+        layout="@layout/wifi_close_item"
+        android:id="@+id/wifi_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <!--<LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WLAN设置"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择WALN"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>-->
+
+    <FrameLayout
+        android:layout_below="@+id/wifi_switch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <wedget.MyListView
+            android:id="@+id/wifi_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </ScrollView>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/btn_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/btn_priview"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上一步"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="下一步"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg">#FFFFFF</color>
+    <color name="bg_line">#CCCCCC</color>
+    <color name="disable_txt">#EBEBEB</color>
+    <color name="disable_txt_color">#4F4F4F</color>
+    <color name="btn_color">#EBEBEB</color>
+    <color name="info_target_hover_tint">#DA0099CC</color>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/wifi_page_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/bg_line"
+        android:text="SHCEC"
+        android:textSize="14sp"
+        android:gravity="center_horizontal|center_vertical"/>
+
+    <LinearLayout
+        android:layout_below="@+id/wifi_page_name"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi_page_title"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:text="SHCEC" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="信号强度" />
+            <TextView
+                android:id="@+id/wifi_page_strong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:text="强" />
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/wifi_page_strong"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_line" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="加密类型" />
+            <TextView
+                android:id="@+id/wifi_page_caps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:text="WPA/WPA2 PSK" />
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/wifi_page_caps"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/password_edittext_item"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:layout_margin="15dp"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_pwd_visviable"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_hw_et_visible_password"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_selector"
+            android:textColor="#4F4F4F"
+            android:text="取消"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_selector"
+            android:layout_height="wrap_content"
+            android:textColor="#4F4F4F"
+            android:text="连接"
+            android:id="@+id/btn_wifi_page_wlan" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/wifi_save_layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="30dp">
+        <TextView
+            android:text="名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/wifi_save_ssid"
+            android:text="ws"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_below="@+id/wifi_save_ssid"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="@color/bg_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifi_statue_layout_one"
+        android:layout_below="@+id/wifi_save_layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="30dp">
+        <TextView
+            android:text="信号强度"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/wifi_save_strong"
+            android:text="强"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_below="@+id/wifi_save_strong"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="@color/bg_line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wifi_save_statue_layout_two"
+        android:layout_below="@+id/wifi_statue_layout_one"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="30dp">
+        <TextView
+            android:text="加密类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/wifi_save_cap"
+            android:text="WAP/WPA2 PSK"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_below="@+id/wifi_save_cap"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="@color/bg_line"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/wifi_save_statue_layout_two"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/wifi_save_cancle"
+            android:text="取消"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_selector"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/wifi_save_unSave"
+            android:text="不保存"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/wifi_save_wlan"
+            android:text="连接"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_selector"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
